@@ -1,0 +1,35 @@
+
+/*Import it from google font!!*/
+*{
+    box-sizing:border-box;
+    font-family: Raleway;
+    color:#774;
+}
+
+/*
+no margin for the whole file.
+*/
+
+html body{
+    margin: 0px;
+    padding: 0px
+
+}
+.main-header{
+    background-image:url(Assets/headerbg.jpg);
+    
+    background-size:cover;
+    
+}
+/*
+Margin for the ul, which is the element with the first piece of content has no margin.
+*/
+.nav ul{
+    margin:0;
+}
+
+
+
+.main-header li{
+    display:inline;
+}
