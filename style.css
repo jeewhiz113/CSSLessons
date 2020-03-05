@@ -1,5 +1,6 @@
-
-/*Import it from google font!!*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Import it from google font!! Not sure how to do directly from the web......*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 *{
     box-sizing:border-box;
     font-family: Raleway;
@@ -16,9 +17,12 @@ html body{
 
 }
 .main-header{
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode:multiply;
     background-image:url(Assets/headerbg.jpg);
     
     background-size:cover;
+    padding-bottom:30px;
     
 }
 /*
@@ -27,9 +31,68 @@ Margin for the ul, which is the element with the first piece of content has no m
 .nav ul{
     margin:0;
 }
-
-
-
+/*Making li inline as opposed to separate liens*/
 .main-header li{
     display:inline;
 }
+.nav a:hover{
+    background-color:rgba(255, 255, 255, .4);
+}
+
+.nav a{
+    display:inline-block;
+    padding: .5em;  /*Now it is important to note that padding adds padding to left and right
+    the anchor tag is nested in li and li was set to be an inline element, so to make this apply
+    top and bottom, we change this display to an inline-block*/
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav{
+    text-align:center;  /*aligning text to the center*/
+    font-size:1.8em;        /*make the text bigger */
+    font-weight:lighter;
+    border-bottom: 1px solid rgba(255, 255,255, .4);  /*get a small separation between main-nav and generics*/
+}
+
+.main-nav li{
+    padding: 0 5%;  /*0 top and bot and 10% left and right*/
+}
+
+/*Now we style the name of the band*/
+.band-name{
+    text-align:center;
+    margin:0;
+    font-size; 4em;
+    font-family: "Booter - Zero Zero"
+}
+
+.content-section{
+    margin:1em;
+}
+.container{
+    max-width:900px;
+    margin:0 auto;  /*margin left and right is auto (divided equally left and right)*/
+    padding: 0 1.5em;
+}
+
+.section-header{
+    font-family: "Metal Mania";
+    font-weight:normal;  /*not bolded*/
+    color: #333;
+    text-align:center;
+    font-size: 2.5em;
+}
+
+/* get the image to float into our text.*/
+
+.about-band-image{
+    float:left;
+    height:200px;
+    width:200px;
+    margin-right:15px;
+    border-radius: 50%;
+}
+
+/*What to do next, style the font for the other part of header*/
+/*Also make the bottom of the page*/
